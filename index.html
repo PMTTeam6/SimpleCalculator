@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Simple Calculator</title>
-        <script src="scripts.js" defer></script>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Simple Calculator</h1>
-        <form>
-            <table>
-                <tr>
-                    <td>First Number:</td>
-                    <td><input type="number" id="first_num" placeholder="Enter first number"></td>
-                </tr>
-                <tr>
-                    <td>Second Number:</td>
-                    <td><input type="number" id="sec_num" placeholder="Enter second number"></td>
-                </tr>
-                <tr>
-                    <td>Addition Result:</td>
-                    <td><input type="number" id="add_res" readonly></td>
-                </tr>
-                <tr>
-                    <td>Subtraction Result:</td>
-                    <td><input type="number" id="sub_res" readonly></td>
-                </tr>
-                <tr>
-                    <td>Multiplication Result:</td>
-                    <td><input type="number" id="mul_res" readonly></td>
-                </tr>
-                <tr>
-                    <td>Division Result:</td>
-                    <td><input type="text" id="div_res" readonly></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button type="submit">Calculate</button>
-                        <button type="reset">Reset</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="first_num">First Number:</label></td>
+                <td><input type="number" id="first_num" placeholder="Enter first number" step="any" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td><label for="sec_num">Second Number:</label></td>
+                <td><input type="number" id="sec_num" placeholder="Enter second number" step="any" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td><label for="add_res">Addition Result:</label></td>
+                <td><input type="number" id="add_res" placeholder="Auto-filled" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="sub_res">Subtraction Result:</label></td>
+                <td><input type="number" id="sub_res" placeholder="Auto-filled" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="mul_res">Multiplication Result:</label></td>
+                <td><input type="number" id="mul_res" placeholder="Auto-filled" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="div_res">Division Result:</label></td>
+                <td><input type="text" id="div_res" placeholder="Auto-filled" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="calculate()">Calculate</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
 </html>
